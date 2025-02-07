@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pgvdev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <a href="#" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </nav>
+    </header>
+    <div class="three-d-box">
+    <section id="home" class="hero-section">
+        <!-- <div class="particle-background"></div> -->
+        <div class="hero-content">
+            <img class="avatar" src="avatar.svg">
+            <h1 class="hero-title">I'm <span id="dynamicText"></span></h1>
+            <p class="hero-text">Full-Stack Developer & Digital Innovator</p>
+            <!-- <a href="#projects" class="cta-button">View My Work</a> -->
+        </div>
+    </section>
+    </div>
+
+    <div class="three-d-box">
+        <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p class="caption">I'm a passionate developer with experience in programming, web design, database management, and cybersecurity. I love creating dynamic and user-friendly applications that solve real-world problems.</p>
+        <div class="about-grid">
+            <div class="about-item">
+                <img class="about-image" src="programming.svg"></img>
+                <h3>Programming</h3>
+                    <div class="about-info">
+                        <ol class="list-one">
+                        <li><span class="dot" style="background-color: #4285F4;"></span>Python</li>
+                        <li><span class="dot" style="background-color: #492953;"></span>JavaScript</li>
+                        <li><span class="dot" style="background-color: #b642f4;"></span>Django</li>
+                        <li><span class="dot" style="background-color: #f4426e;"></span>Flask</li>
+                        </ol>
+                        <ol class="list-two">
+                        <li><span class="dot" style="background-color: #42f4ee;"></span>Git</li>
+                        <li><span class="dot" style="background-color: #42f49b;"></span>GitHub</li>
+                        <li><span class="dot" style="background-color: #9bf442;"></span>VS Code</li>
+                        <li><span class="dot" style="background-color: #d3f442;"></span>PyCharm</li>
+                        </ol>
+                    </div>              
+            </div>
+
+            <div class="about-item">
+                <img class="about-image" src="programming.svg"></img>
+                    <h3>Web Development</h3>
+                    <div class="about-info">
+                        <ol class="list-one">
+                        <li><span class="dot" style="background-color: #e542f4;"></span>Figma</li>
+                        <li><span class="dot" style="background-color: #f49e42;"></span>Sketch</li>
+                        <li><span class="dot" style="background-color: #9bf442;"></span>CSS</li>
+                        <li><span class="dot" style="background-color: #d3f442;"></span>HTML</li>
+                        </ol>
+                        <ol class="list-two">
+                        <li><span class="dot" style="background-color: #42f49b;"></span>PHP</li>
+                        <li><span class="dot" style="background-color: #f44242;"></span>Adobe Illustrator</li>
+                        <li><span class="dot" style="background-color: #4285F4;"></span>Adobe Photoshop</li>
+                        </ol>
+                    </div>
+            </div>
+
+            <div class="about-item">
+                <img class="about-image" src="programming.svg"></img>
+                <h3>Data Analysis</h3>
+                    <div class="about-info">
+                        <ol class="list-one">
+                        <li><span class="dot" style="background-color: #5f0a67;"></span>Power BI</li>
+                        <li><span class="dot" style="background-color: #bc6d18;"></span>Tableau</li>
+                        <li><span class="dot" style="background-color: #42760e;"></span>SQL</li>
+                        </ol>
+                        <ol class="list-two">
+                        <li><span class="dot" style="background-color: #cbdb84;"></span>Qlik</li>
+                        <li><span class="dot" style="background-color: #1d3967;"></span>Excel</li>
+                        </ol>
+                    </div>
+            </div>
+        </div>
+        </section>
+    </div>
+
+    <section id="projects" class="projects-section">
+        <h2>Recent Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <div class="project-image" style="background-image: url('project1.jpg');" data-lightbox="project1"></div>
+                <div class="project-info">
+                    <h3>Tax Calculation Software</h3>
+                    <img class="project-image" src="tax.png"></img>
+                    <button href="https://github.com/yourproject" class="submit-button">View Project</button>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image" style="background-image: url('project2.jpg');" data-lightbox="project2"></div>
+                <div class="project-info">
+                    <h3>Business Intelligence for Optimal Decision-Making</h3>
+                    <img class="project-image" src="analysis2.png"></img>
+                    <button href="https://github.com/yourproject2" class="submit-button">View Project</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Interested in collaborating with me? Start a conversation</h2>
+        <form action="mailto:youremail@example.com" method="post" class="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" rows="5" placeholder="Message" required></textarea>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:youremail@example.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 pgvdev</p>
+        </div>
+    </footer>
+</body>
+</html>
