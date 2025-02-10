@@ -97,7 +97,7 @@ header {
 .three-d-box {
     min-height: 100vh;
     background: linear-gradient(145deg, #264653, #2A9D8F);
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
@@ -177,7 +177,7 @@ header {
 
 .about-section {
     margin: 5rem auto;
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
     height: auto; /* Allow for auto height to ensure responsive adjustments */
     max-width: 1200px; /* Limit the max width for better readability */
     background: linear-gradient(-45deg, #264653, #2A9D8F);
@@ -253,7 +253,7 @@ header {
     list-style: none;
     margin-bottom: 5px;
     font-size: 15px;
-    
+
 }
 
 .dot {
@@ -617,15 +617,15 @@ a:hover, button:hover, .cta-button:hover {
 /* Text Effects - Glitch Effect */
 .glitch {
     animation: glitch 1s linear infinite;
-  }
-  
-  @keyframes glitch {
+}
+
+@keyframes glitch {
     0% { transform: translate(0); }
     20% { transform: translate(-5px, 5px); }
     40% { transform: translate(5px, -5px); }
     60% { transform: translate(-5px, 5px); }
     80% { transform: translate(5px, -5px);
-   }
+    }
     100% { transform: translate(0);
-   }
-  }
+    }
+}
