@@ -430,6 +430,10 @@ header {
     background: #E9EDC9;
 }
 
+.dark-mode .three-d-box-header {
+    background: #E9EDC9;
+}
+
 .dark-mode .three-d-box, .dark-mode .projects-section {
     background: #E9EDC9;
 }
